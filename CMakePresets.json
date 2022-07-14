@@ -41,7 +41,8 @@
             "name": "dev-common",
             "binaryDir": "${sourceDir}/build/dev",
             "inherits": [
-                "dev-mode"
+                "dev-mode",
+                "cppcheck"
             ],
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug",

@@ -61,12 +61,9 @@ target_include_directories(
 
 # Add dependencies
 find_package(SDL2 REQUIRED)
-find_package(
-    fmt CONFIG REQUIRED
-    PATHS "D:/Program Files/fmt"
-)
+find_package(fmt REQUIRED)
 
-target_link_libraries(sdk_sdk PUBLIC fmt::fmt)
+target_link_libraries(sdk_sdk PUBLIC SDL2::SDL2 fmt::fmt)
 
 
 # Install rules

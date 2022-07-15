@@ -5,8 +5,7 @@
 #include "fmt/format.h"
 #include <dlfcn.h>
 
-namespace ung {
-namespace sdk {
+namespace ung::sdk {
 
 PluginService::~PluginService() {
     this->plugins = std::vector<Plugin>{};
@@ -41,7 +40,6 @@ auto PluginService::initialize_plugins(SDL_Window *window) -> void {
     }
 }
 
-} // namespace sdk
-} // namespace ung
+} // namespace ung::sdk
 
 #endif

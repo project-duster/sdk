@@ -11,10 +11,9 @@
 
 #include "sdk/sdk_export.hpp"
 
-namespace ung {
-namespace sdk {
+namespace ung::sdk {
 
-struct SDK_EXPORT Plugin {
+struct SDK_EXPORT plugin {
 
     //     Plugin(const char *name, std::array<uint32_t, 3> version) : name(name), version(version) {}
 
@@ -23,7 +22,7 @@ struct SDK_EXPORT Plugin {
     //     std::vector<std::unique_ptr<System>> systems;
 };
 
-struct PluginService {
+struct plugin_service {
     //     ~PluginService();
     //     auto load_plugin(const char *path) -> void;
     //     auto initialize_plugins(SDL_Window *window) -> void;
@@ -32,5 +31,4 @@ struct PluginService {
     //     std::vector<void *> plugin_libs;
 };
 
-} // namespace sdk
-} // namespace ung
+} // namespace ung::sdk

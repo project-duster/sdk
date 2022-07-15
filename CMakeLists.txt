@@ -18,12 +18,10 @@ include(cmake/variables.cmake)
 set(SDK_SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/windows/plugin.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/linux/plugin.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sdk.cpp
 )
 
-add_library(sdk_sdk
-    src/windows/plugin.cpp
-    src/linux/plugin.cpp
-)
+add_library(sdk_sdk ${SDK_SRC})
 add_library(sdk::sdk ALIAS sdk_sdk)
 
 include(GenerateExportHeader)
@@ -63,7 +61,7 @@ target_include_directories(
 find_package(SDL2 REQUIRED)
 find_package(fmt REQUIRED)
 
-target_link_libraries(sdk_sdk PUBLIC SDL2::SDL2 fmt::fmt)
+target_link_libraries(sdk_sdk PUBLIC mingw32 SDL2::SDL2main SDL2::SDL2 fmt::fmt)
 
 
 # Install rules

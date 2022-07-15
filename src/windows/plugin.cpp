@@ -5,8 +5,7 @@
 #include <fmt/format.h>
 // #include <windows.h>
 
-namespace ung {
-namespace sdk {
+namespace ung::sdk {
 
 // PluginService::~PluginService() {
 //     this->plugins = std::vector<Plugin>{};
@@ -40,7 +39,6 @@ namespace sdk {
 //     }
 // }
 
-} // namespace sdk
-} // namespace ung
+} // namespace ung::sdk
 
 #endif

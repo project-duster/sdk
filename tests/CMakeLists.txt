@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(projTests LANGUAGES CXX)
+project(sdkTests LANGUAGES CXX)
 
 include(../cmake/folders.cmake)
 include(../cmake/windows-set-path.cmake)

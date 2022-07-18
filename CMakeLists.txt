@@ -59,9 +59,9 @@ target_include_directories(
 
 # Add dependencies
 find_package(SDL2 REQUIRED)
-find_package(fmt REQUIRED)
+find_package(FMT REQUIRED)
 
-target_link_libraries(sdk_sdk PUBLIC mingw32 SDL2::SDL2main SDL2::SDL2 fmt::fmt)
+# target_link_libraries(sdk_sdk PUBLIC mingw32 SDL2::SDL2main SDL2::SDL2 fmt::fmt)
 
 
 # Install rules

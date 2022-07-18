@@ -2,6 +2,9 @@
 
 namespace sdk {
 auto greeting() -> std::string {
-    return "Hello from SDK library";
+    return "h";
+}
+auto not_exported() -> void {
+    return;
 }
 } // namespace sdk

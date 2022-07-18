@@ -9,5 +9,6 @@
 namespace sdk {
 
 SDK_EXPORT auto greeting() -> std::string;
+auto not_exported() -> void;
 
 } // namespace sdk

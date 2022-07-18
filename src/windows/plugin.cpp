@@ -2,7 +2,7 @@
 
 #include "sdk/plugin.hpp"
 
-#include <fmt/format.h>
+// #include <fmt/format.h>
 // #include <windows.h>
 
 namespace ung::sdk {
